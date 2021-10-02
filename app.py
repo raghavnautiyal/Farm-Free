@@ -26,7 +26,7 @@ def index():
     # add file to database and take reroute user to route for their specific bug ID.
     return render_template("index.html")
 
-@app.route("/bug/<identifier>",  methods=["GET", "POST"])
-def bug(identifier):
-    # based on identifier - return prediction and type of bug for the bug image user has input.
-    # return bug image as well
+# @app.route("/bug/<identifier>",  methods=["GET", "POST"])
+# def bug(identifier):
+#     # based on identifier - return prediction and type of bug for the bug image user has input.
+#     # return bug image as well
