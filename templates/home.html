@@ -28,16 +28,33 @@
                 </p>
 
                 <form action="/home" method="POST" enctype="multipart/form-data">
-                    <section>
+                    <section id="test123">
                         <h2>Upload Bug Image</h2>
                         <input type="file" class="custom-file-input" name="image" id="image" accept="image/*" required>
-                        <label class="custom-file-label" for="image"><h2 class="blue-text">SELECT</h2></label>
-
+                        <label class="custom-file-label" for="image"><h2 class="blue-text" id="CHANGE">SELECT</h2></label>
                     </section>
 
                     <button>Submit</button>
                 </form>
             </section>
         </main>
+
+        <script>
+
+            function addFile(file) {
+                document.getElementById("CHANGE").classList.remove("blue-text");
+                document.getElementById("CHANGE").classList.add("green-text");
+
+                // let fileurl = file.target.files[0];
+                // fileurl = URL.createObjectURL(fileurl);
+
+                // let img = document.createElement("img");
+                // img.src = fileurl;
+
+                // document.getElementById("test123").appendChild(img);
+            }
+
+            document.getElementById("image").addEventListener("change", addFile);
+        </script>
     </body>
 </html>
