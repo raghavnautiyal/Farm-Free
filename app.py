@@ -59,14 +59,7 @@ def home():
 
             # pass the image to the ML model and get result
             # assuming model will return bug name:
-            bug_name = "red spider"
-
-            print(url)
-
-            if (url == "1.jpg"):
-                bug_name = "white margined moth"
-
-            time.sleep(3)
+            bug_name = "white margined moth"
 
             # get user location
 
