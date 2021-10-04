@@ -18,7 +18,7 @@ header section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 header #nav-links {
@@ -36,14 +36,14 @@ header a {
 }
 
 .blue-text {
-  color: #0000FF;
+  color: #0000ff;
 }
 
 main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('/static/images/bugs.jpg');
+
   height: 95vh;
   width: 100vw;
 }
@@ -73,7 +73,6 @@ main > article > article {
 
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
-
 }
 
 main > article > article section {
@@ -81,7 +80,7 @@ main > article > article section {
   justify-content: space-between;
   align-items: center;
   width: 92%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 
   font-size: 1.4rem;
   text-transform: capitalize;
@@ -98,4 +97,7 @@ main > article p {
 
 .green-text {
   color: green;
+}
+p {
+  font-family: "IBM Plex Sans", sans-serif;
 }
